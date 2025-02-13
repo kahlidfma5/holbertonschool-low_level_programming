@@ -1,21 +1,2 @@
 #!/bin/bash
-# Script to compile a C file to an object file
-
-# Check if CFILE is set
-if [ -z "$CFILE" ]; then
-    echo "Error: CFILE variable is not set. Please export CFILE with the C file name."
-    exit 1
-fi
-
-# Extract the output filename by replacing .c with .o
-output_file="${CFILE%.c}.o"
-
-# Compile the C file to an object file
-gcc -c "$CFILE" -o "$output_file"
-
-# Check if the compilation was successful
-if [ $? -eq 0 ]; then
-    echo "Compilation successful: $output_file created."
-else
-    echo "Error: Compilation failed."
-fi
+gcc -c "$CFILE" -o "${CFILE%.c}.o"
