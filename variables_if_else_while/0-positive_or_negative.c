@@ -1,36 +1,25 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
-gcc -Wall -pedantic -Werror -Wextra -std=gnu89 0-positive_or_negative.c -o 0-positive_or_negative
+#include <stdio.h>
 
 /**
- * more headers goes there
+ * main - entry point
  *
- * main - Entry point
- * betty style doc for function main goes there
- *
- * Return: Always 0 (Success)
+ * Description: false or true validation
+ * 
+ * Return: 0 (success)
  */
 int main(void)
 {
-int n;
+        int n;
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-if (n == 0)
-{
-printf("is zero\n");
-
-if (n > 0)
-{
-printf("is positive\n");
-}
-else
-{
-printf("is negative\n");
-}
-}
-
-return (0);
+        srand(time(0));
+        n =  rand() - RAND_MAX / 2;
+        if (n > 0)
+                printf("%i is positive\n", n);
+        else if ( n == 0);
+                printf("%i is zero\n", n);
+        else
+                printf("%i is negtive\n", n);
+        return (0);
 }
