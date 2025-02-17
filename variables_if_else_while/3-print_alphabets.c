@@ -11,19 +11,18 @@
  */
 int main(void)
 {
-char
-ch = 'a';
+char ch = 'a';
 while (ch <= 'z')
 {
 putchar (ch);
 ch++;
 }
-char CH = 'A';
-while (CH <= 'Z')
+char chs = 'A';
+while (chs <= 'Z')
 {
-putchar (CH);
-CH++;
-}
+putchar (chs);
+chs++;
+
 putchar('\n');
 return (0);
 }
