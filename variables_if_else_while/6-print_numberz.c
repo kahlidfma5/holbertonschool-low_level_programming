@@ -1,10 +1,9 @@
-#include  <stdio.h>
-
+#include <stdio.h>
 /**
-* main - Entry point
-*
-* Return: Always 0 (Success)
-*/
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
@@ -15,6 +14,6 @@ for (number = 0; number < 10; number++)
 putchar(number + '0');
 }
 
-putchar ('\n')
+putchar('\n');
 return (0);
 }
