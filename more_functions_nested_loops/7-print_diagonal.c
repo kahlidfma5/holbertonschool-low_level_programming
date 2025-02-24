@@ -5,6 +5,7 @@
  * @n: The number of \ characters to be printed.
  */
 void print_diagonal(int n)
+{
 	int len, space;
 
 	if (n > 0)
@@ -20,4 +21,6 @@ void print_diagonal(int n)
 
 	_putchar('\n')
 	}
+}
+	_putchar('\n')
 }
